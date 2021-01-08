@@ -20,9 +20,9 @@
           <ion-label class="ion-padding ion-text-wrap">{{todos[0]}}</ion-label>
           <ion-checkbox slot="start" [checked]="todos[1]" (ionChange)="change(todos[1], i)"></ion-checkbox>
           <ion-reorder slot="end"></ion-reorder>
-          <ion-fab-button size="large" slot="end" color="danger" clear (click)="deleteTask(i)">
+          <ion-button size="large" slot="end" color="danger" clear (click)="deleteTask(i)">
             <ion-icon name="trash"></ion-icon>
-          </ion-fab-button>
+          </ion-button>
         </ion-item>
       </ion-reorder-group>
     </ion-list>
